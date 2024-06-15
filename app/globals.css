@@ -15,6 +15,9 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+#chatbox a{
+  color: blueviolet;
+}
 
 @layer utilities {
   .text-balance {

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import 'bootstrap-icons/font/bootstrap-icons.css'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
