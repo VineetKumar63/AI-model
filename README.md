@@ -1,24 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AI-stream
 
-## Getting Started
+## Overview
+This project utilizes the Gemini Pro API (free tier) to stream large language model responses directly into a web app. The responses are sanitized using 'dompurify' to ensure safe content delivery and are beautified using 'markdown-it' to enhance the display of basic HTML messages received from the AI.
 
-First, run the development server:
+## Features
+- Integrates with the Gemini Pro API for language model responses
+- Utilizes 'dompurify for sanitizing web content
+- Uses 'markdown-it' for beautifying basic HTML messages
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Installation
+1. Clone the repository
+2. Install dependencies using `npm install`
+3. Set up the Gemini Pro API credentials
+4. Run the project locally using `npm run dev`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
+1. Access the web app
+2. Stream language model responses from Gemini Pro
+3. View sanitized and beautified content on the web app
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technologies Used
+- Gemini Pro API
+- dompurify
+- markdown-it
+- Google Gemini
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Contributors
+- [Vineet Verma](https://github.com/VineetKumar63)
+
 
 ## Learn More
 
