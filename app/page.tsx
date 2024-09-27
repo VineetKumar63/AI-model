@@ -10,14 +10,15 @@ export default function Home() {
     api: 'api/geminiai'
   });
 
-
   return (
-    <main >
-      <div>
+    <main>
+      <div className='border border-red-600 p-1 bg-slate-100 min-h-screen'>
+        <p className='text-center justify-center mt-2 text-red-800 text-2xl'>Welcome, I Am Vineet Verma</p>
+        <p className='text-center justify-center text-red-700 text-xl'>Here is  replica of Gemini</p>
+        <div className="flex  flex-col items-center justify-between p-12 pt-4">
+        {RenderForm()}
+        {RenderMessages()}
       </div>
-      <div className="flex min-h-screen flex-col items-center justify-between p-12">
-      {RenderForm()}
-      {RenderMessages()}
       </div>
     </main>
   );
@@ -27,7 +28,7 @@ export default function Home() {
       <form
         onSubmit={(event: React.FormEvent<HTMLFormElement>) => {
           event.preventDefault();
-           
+
           handleSubmit(event, {
             data: {
               prompt: input
